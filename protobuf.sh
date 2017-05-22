@@ -213,7 +213,7 @@ if [ "${MODE}" == "install" ]; then
     make || fail
     make check || fail
     make install || fail
-    ldconfig || fail
+    # ldconfig || fail
     cd ${DOWNLOAD_DIR} || fail
     rm ${PROTOBUF_ARCHIVE} || fail
     echo "Protobuf has been installed to ${INSTALL_DIR}"
